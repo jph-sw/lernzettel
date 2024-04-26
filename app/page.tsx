@@ -4,9 +4,10 @@ export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        Meine Lernzettel
+        WIT-23-1 Lernzettel
       </h1>
-      <p className="mb-4"></p>
+      <p>Diese Seite ist eine Sammlung von den Lernzetteln der Klasse WIT-23</p>
+
       <div className="my-8">
         <BlogPosts />
       </div>
