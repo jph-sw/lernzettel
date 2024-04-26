@@ -1,42 +1,38 @@
-# Portfolio Blog Starter
-
-This is a porfolio site template complete with a blog. Includes:
-
-- MDX and Markdown support
-- Optimized for SEO (sitemap, robots, JSON-LD schema)
-- RSS Feed
-- Dynamic OG images
-- Syntax highlighting
-- Tailwind v4
-- Vercel Speed Insights / Web Analytics
-- Geist font
-
-## Demo
-
-https://portfolio-blog-starter.vercel.app
+# Meine Website zum Teilen von Lernzetteln
 
 ## How to Use
 
-You can choose from one of the following two methods to use this repository:
+Ihr möchtet selber Lernzettel schreiben und hinzufügen? Ganz einfach!
 
-### One-Click Deploy
+Die Lernzettel sind unter: app/lernzettel/posts/
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
+Sie sind mithilfe von Markdown geschrieben. Genauso wie diese README!! 
+Markdown ist sehr einfach zu verstehen, lest euch einfach den Quellcode von anderen Lernzetteln durch.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/solutions/blog&project-name=blog&repository-name=blog)
+### Wie erstelle ich jetzt selber Lernzettel?
 
-### Clone and Deploy
+1. Klont das Projekt
+   `git clone https://github.com/jph-sw/lernzettel.git`
+2. Geht unter `app/lernzettel/posts`, denn dort findet ihr die bereits erhaltenen Lernzettel
+3. Erstellt eine neue Datei mit dem Namen `euerThema.md`
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [pnpm](https://pnpm.io/installation) to bootstrap the example:
+**CAUTION**
 
-```bash
-pnpm create next-app --example https://github.com/vercel/examples/tree/main/solutions/blog blog
+Am Anfang der Datei **muss** das folgende stehen:
+```
+---
+title: "Python Grundlagen: Einfacher geht's nicht!"
+publishedAt: "2024-04-26"
+summary: "Verstehe Python ganz leicht in nur 5-10 Minuten!"
+---
 ```
 
-Then, run Next.js in development mode:
+Ersetzt das mit euren Daten, aber achtet darauf das Datum richtig zu formatieren `yyyy-mm-dd`. Außerdem müssen die `---` **beide** da sein!
 
-```bash
-pnpm dev
-```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/templates) ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).
+### Wie lade ich das jetzt hoch?
+
+Dafür müsst ihr einen neuen Branch erstellen. eg. Jean-OSI-Modell.
+Eure Veränderungen im Branch committen und eine Pull-Request erstellen.
+
+Wer von Git keine Ahnung hat soll mich einfach anschreiben.
