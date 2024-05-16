@@ -1,0 +1,96 @@
+---
+title: "LF03: Klassenarbeit"
+publishedAt: "2024-05-16"
+summary: "Klassenarbeit am Donnerstag, den xx.xx.xxxx"
+---
+
+### Lernzettel: Netzwerkgrundlagen
+
+#### OSI-Schichtenmodell
+Das OSI-Schichtenmodell (Open Systems Interconnection Model) ist ein konzeptionelles Modell, das die Kommunikation in Netzwerken in sieben Schichten unterteilt:
+
+1. **Bitübertragungsschicht (Physical Layer)**
+   - **Aufgabe:** Übertragung von Bits (0 und 1) über physische Medien (Kabel, Funk).
+   - **Funktion:** Definition von Hardware-Spezifikationen, Signalübertragung, Bit-Synchronisation.
+
+2. **Sicherungsschicht (Data Link Layer)**
+   - **Aufgabe:** Sicherstellung der fehlerfreien Übertragung von Datenrahmen zwischen direkt verbundenen Geräten.
+   - **Funktion:** Fehlererkennung und -korrektur, Medienzugriffskontrolle (MAC).
+
+3. **Vermittlungsschicht / Netzwerkschicht (Network Layer)**
+   - **Aufgabe:** Routing von Datenpaketen zwischen verschiedenen Netzwerken.
+   - **Funktion:** Logische Adressierung (z.B. IP-Adressen), Paketweiterleitung, Router.
+
+4. **Transportschicht (Transport Layer)**
+   - **Aufgabe:** Gewährleistung einer zuverlässigen oder unzuverlässigen Datenübertragung zwischen Endsystemen.
+   - **Funktion:** Segmentierung und Wiederzusammenfügung von Daten, Fehlererkennung und -korrektur, Flusskontrolle.
+   - **Protokolle:** TCP (Transmission Control Protocol), UDP (User Datagram Protocol).
+
+5. **Sitzungsschicht (Session Layer)**
+   - **Aufgabe:** Verwaltung und Steuerung von Sitzungen zwischen Anwendungen.
+   - **Funktion:** Sitzungsaufbau, -führung und -abbau, Sitzungswiederherstellung.
+
+6. **Darstellungsschicht (Presentation Layer)**
+   - **Aufgabe:** Datenumwandlung und -verschlüsselung.
+   - **Funktion:** Datenkompression, Datenformatierung, Verschlüsselung und Entschlüsselung.
+
+7. **Anwendungsschicht (Application Layer)**
+   - **Aufgabe:** Bereitstellung von Netzwerkdiensten für Anwendungen.
+   - **Funktion:** Schnittstellen für Benutzer und Anwendungen, z.B. HTTP, FTP, SMTP.
+
+#### IPv6
+- **Infoblatt:**
+  - **Aufgabe:** IPv6 (Internet Protocol Version 6) ist der Nachfolger von IPv4, entwickelt zur Bewältigung der IP-Adressknappheit.
+  - **Funktion:** Bereitstellung einer größeren Adressierungskapazität (128-Bit-Adressen), effizienteres Routing, verbesserte Sicherheit.
+  - **Merkmale:** 
+    - **Adressformat:** 128 Bit, dargestellt in hexadezimaler Notation (z.B. 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
+    - **Adressbereiche:** Unicast, Anycast, Multicast.
+    - **Autokonfiguration:** Stateless Address Autoconfiguration (SLAAC).
+
+#### Bitübertragungsschicht
+- **Aufgabe:** Übertragung von Bits über physische Kommunikationswege.
+- **Funktion:** 
+  - Physikalische Eigenschaften des Übertragungsmediums (Kabeltypen, Stecker, elektrische Signale, Funkwellen).
+  - Definition von Schnittstellen und Übertragungsmodi (synchron/asynchron).
+
+#### Sicherungsschicht
+- **Aufgabe:** Fehlerfreie Übertragung von Datenrahmen zwischen benachbarten Netzwerkgeräten.
+- **Funktion:** 
+  - MAC-Adressen zur eindeutigen Identifikation von Netzwerkgeräten.
+  - Fehlererkennung und -korrektur (z.B. CRC).
+  - Kontrolle des Medienzugriffs (CSMA/CD bei Ethernet).
+
+#### Vermittlungsschicht / Netzwerkschicht
+- **Aufgabe:** Vermittlung und Weiterleitung von Datenpaketen zwischen verschiedenen Netzwerken.
+- **Funktion:**
+  - Logische Adressierung (IP-Adressen).
+  - Routing von Datenpaketen über Netzwerke hinweg.
+  - Fragmentierung und Reassemblierung von Paketen.
+  
+#### Transportschicht
+- **Aufgabe:** Sicherstellung einer zuverlässigen oder unzuverlässigen Ende-zu-Ende-Datenübertragung.
+- **Funktion:** 
+  - Segmentierung und Wiederzusammenfügung von Daten.
+  - Flusskontrolle und Staukontrolle.
+  - Fehlererkennung und -korrektur.
+  
+#### TCP und UDP
+- **TCP (Transmission Control Protocol):**
+  - **Aufgabe:** Zuverlässige, verbindungsorientierte Datenübertragung.
+  - **Funktion:** Fehlerkorrektur, Flusskontrolle, Segmente.
+  - **Anwendungsfälle:** Webbrowser (HTTP/HTTPS), E-Mail (SMTP, IMAP, POP3).
+
+- **UDP (User Datagram Protocol):**
+  - **Aufgabe:** Unzuverlässige, verbindungslose Datenübertragung.
+  - **Funktion:** Keine Fehlerkorrektur, schnelle Übertragung.
+  - **Anwendungsfälle:** Videostreaming, Online-Spiele, DNS-Anfragen.
+
+#### Segmente vs. Pakete
+- **Segmente:** Datenabschnitte auf der Transportschicht, speziell für TCP.
+- **Pakete:** Datenabschnitte auf der Netzwerkschicht, die Informationen über die Quelle und das Ziel enthalten.
+
+#### Ports
+- **Aufgabe:** Identifikation von spezifischen Anwendungen oder Diensten auf einem Host.
+- **Funktion:** 
+  - Ports sind nummerierte Endpunkte für die Kommunikation auf der Transportschicht.
+  - **Beispiele:** HTTP (Port 80), HTTPS (Port 443), FTP (Port 21).
