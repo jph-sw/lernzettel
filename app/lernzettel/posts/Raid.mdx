@@ -1,0 +1,61 @@
+---
+title: "Raid im Überblick"
+publishedAt: "2024-07-18"
+summary: "Die einzelnen Raids kurz erklärt."
+---
+
+# RAID im Überblick
+
+## Raid0
+
+-	keine Redundanz
+-	der 1. Block wird auf die 1. Platte geschrieben, der 2. Block auf die 2. usw.
+-	kein Schutz gegen Datenverlust
+-	höhere Zugriffsraten
+
+## Raid1
+
+-	"Drive Duplexing"
+-	Auf zwei Platten werden identische Daten gespeichert
+-	Hohe Ausfallsicherheit
+-	Es wird die doppelte Plattenkapazität benötigt
+
+## Raid2
+
+-	Daten werden byteweise auf eine Gruppe von Platten aufgeteilt.
+-	Für jeden Datensektor wird auf der Prüfsummenplatte eine ECC-Information (Error Checkingand Correction)
+-	Moderne Festplatten bieten standardmäßig ECC!!
+
+## Raid3
+
+-	die Datenelemente aus Bits und Bytes werden auf das Array verteilt
+-	Für jede Reihe wird ein Parity-Byte hinzugefügt und auf einer zusätzlichen Platte abgelegt
+-	Simultaner Zugriff auf die Platten
+-	"Hot Swap" möglich
+
+## Raid4
+
+-	Daten werden in Blöcke zu 8, 16, 64 oder 128 KByte aufgeteilt
+-	Hohe Lese-Performance
+
+## Raid5
+
+-	die Datenverteilung erfolgt blockorientiert mit gleichzeitiger Verteilung der Paritätsinformationen
+-	die Prüfsummen werden sektorweise gebildet und auf alle Platten verteilt
+-	relativ langsame Schreibzugriffe
+-	schnelle Lesezugriffe
+
+## Raid6
+
+-	wie RAID5, nur werden die Paritätsinformationen auf einem zusätzlichen Laufwerk gespeichert
+
+## Raid7
+
+-	Aufbau ähnlich wie bei RAID5
+-	Es wird zusätzlich ein lokales Echtzeitbetriebssystem in der Steuereinheit eingesetzt
+
+## Raid10
+
+-	Kombination von RAID1 und RAID0
+-	Verwendung von 4 Festplatten
+-	Es gibt 2 Paare gespiegelter Array, die dann zu einem RAID-0-Array zusammengefasst werden
