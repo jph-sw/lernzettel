@@ -12,6 +12,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "./components/footer";
 import { baseUrl } from "./sitemap";
+import { cx } from "./utils/cx";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -40,8 +41,6 @@ export const metadata: Metadata = {
     },
   },
 };
-
-export const cx = (...classes) => classes.filter(Boolean).join(" ");
 
 export default function RootLayout({
   children,

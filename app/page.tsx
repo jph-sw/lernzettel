@@ -1,6 +1,6 @@
 import { BlogPosts } from "app/components/posts";
 import { Gilda_Display } from "next/font/google";
-import { cx } from "./layout";
+import { cx } from "./utils/cx";
 
 const gilda = Gilda_Display({ weight: "400", subsets: ["latin"] });
 
