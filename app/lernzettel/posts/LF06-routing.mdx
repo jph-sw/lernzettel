@@ -1,0 +1,107 @@
+---
+title: "LF06: Routing"
+publishedAt: "2025-04-24"
+summary: "Aufgaben zu Routing"
+---
+
+# Recherche
+
+## Definieren Sie den Begriff "Routing"
+
+## Erläutern Sie den Unterschied zwischen einem Router und einem Switch.
+
+## Benennen und erklären Sie die beiden Arten von Routing.
+
+## Bennen und beschreiben Sie drei verschiedene Routing-Schemata.
+
+## Erklären Sie was unter "Routing-Protokoll" zu verstehen ist.
+
+## Nennen Sie vier verschiedene Protokolltypen.
+
+Absolut! Hier sind die Definitionen und Erklärungen zu den angefragten Begriffen im Bereich Netzwerk-Routing:
+
+## Definieren Sie den Begriff "Routing"
+
+**Routing** ist der Prozess der Auswahl von Pfaden in einem oder mehreren Netzwerken, über die Netzwerkdatenpakete weitergeleitet werden. Dieser Prozess findet auf der Vermittlungsschicht (Schicht 3) des OSI-Modells statt. Router, die spezialisierten Netzwerkgeräte, die Routing durchführen, verwenden Routing-Tabellen, um das nächstgelegene Ziel (den nächsten "Hop") für ein Paket auf seinem Weg zum endgültigen Ziel zu bestimmen. Das Hauptziel des Routings ist es, Datenpakete effizient und zuverlässig von einer Quelle zu einem Ziel über möglicherweise viele Zwischennetzwerke zu transportieren.
+
+## Erläutern Sie den Unterschied zwischen einem Router und einem Switch.
+
+Obwohl sowohl Router als auch Switches Geräte sind, die den Datenverkehr in Netzwerken lenken, tun sie dies auf unterschiedlichen Ebenen und mit unterschiedlichen Zielen:
+
+1.  **Funktionsebene (OSI-Modell):**
+    *   **Switch:** Arbeitet primär auf der Sicherungsschicht (Schicht 2). Er leitet Datenframes basierend auf MAC-Adressen (Media Access Control) weiter.
+    *   **Router:** Arbeitet auf der Vermittlungsschicht (Schicht 3). Er leitet Datenpakete basierend auf IP-Adressen (Internet Protocol) weiter.
+
+2.  **Netzwerkbereich:**
+    *   **Switch:** Wird verwendet, um Geräte *innerhalb desselben lokalen Netzwerks* (LAN) miteinander zu verbinden. Er erstellt eine Tabelle mit MAC-Adressen der angeschlossenen Geräte und leitet den Verkehr nur an den Port weiter, an dem das Zielgerät angeschlossen ist.
+    *   **Router:** Wird verwendet, um *verschiedene Netzwerke* miteinander zu verbinden (z. B. ein LAN mit dem Internet oder zwei verschiedene LANs). Er trifft Entscheidungen darüber, wohin Pakete gesendet werden sollen, um ihr Zielnetzwerk zu erreichen.
+
+3.  **Adressierung:**
+    *   **Switch:** Verwendet MAC-Adressen zur Weiterleitung.
+    *   **Router:** Verwendet IP-Adressen zur Weiterleitung.
+
+4.  **Broadcast-Domänen:**
+    *   **Switch:** Leitet Broadcast-Frames an alle Ports weiter (außer dem Ursprungsport). Switches trennen keine Broadcast-Domänen (es sei denn, VLANs werden verwendet).
+    *   **Router:** Blockiert Broadcasts standardmäßig und leitet sie nicht zwischen den verbundenen Netzwerken weiter. Jeder Port eines Routers repräsentiert eine separate Broadcast-Domäne.
+
+Zusammenfassend lässt sich sagen: Ein Switch verbindet Endgeräte innerhalb eines lokalen Netzwerks, während ein Router verschiedene Netzwerke miteinander verbindet und den besten Pfad zwischen diesen Netzwerken auswählt.
+
+## Benennen und erklären Sie die beiden Arten von Routing.
+
+Die beiden grundlegenden Arten des Routings sind:
+
+1.  **Statisches Routing:**
+    *   **Erklärung:** Beim statischen Routing werden die Routen manuell von einem Netzwerkadministrator konfiguriert. Der Administrator gibt explizit den Pfad an, den Pakete zu einem bestimmten Zielnetzwerk nehmen sollen. Diese Routen ändern sich nicht automatisch, wenn sich die Netzwerktopologie ändert (z. B. bei einem Ausfall eines Links oder Routers).
+    *   **Vorteile:** Einfach zu konfigurieren in kleinen Netzwerken, sehr sicher (kein Austausch von Routing-Informationen), geringe CPU-Belastung für den Router, vorhersagbarer Pfad.
+    *   **Nachteile:** Nicht skalierbar für große Netzwerke, hoher administrativer Aufwand bei Änderungen, keine automatische Anpassung an Netzwerkausfälle.
+
+2.  **Dynamisches Routing:**
+    *   **Erklärung:** Beim dynamischen Routing lernen Router die Netzwerktopologie automatisch von benachbarten Routern mithilfe von Routing-Protokollen. Router tauschen Informationen über erreichbare Netzwerke und die Kosten (Metriken) dorthin aus. Basierend auf diesen Informationen berechnen sie die besten Pfade und aktualisieren ihre Routing-Tabellen dynamisch. Wenn sich die Topologie ändert (z. B. ein Link fällt aus), erkennen die Router dies und berechnen alternative Pfade.
+    *   **Vorteile:** Skalierbar für große Netzwerke, automatische Anpassung an Topologieänderungen, geringerer administrativer Aufwand bei Änderungen.
+    *   **Nachteile:** Komplexer zu implementieren und zu verwalten, benötigt Router-Ressourcen (CPU, Speicher, Bandbreite für Protokoll-Updates), potenzielle Sicherheitsprobleme, Konvergenzzeit nach Änderungen (Zeit, bis alle Router die Änderung kennen).
+
+## Bennen und beschreiben Sie drei verschiedene Routing-Schemata.
+
+Hier sind drei gängige Routing-Schemata oder Ansätze:
+
+1.  **Shortest Path Routing (Routing nach kürzestem Pfad):**
+    *   **Beschreibung:** Dieses Schema zielt darauf ab, den Pfad mit den geringsten Kosten zwischen Quelle und Ziel zu finden. Die "Kosten" werden durch eine Metrik definiert, die je nach verwendetem Routing-Protokoll variieren kann. Gängige Metriken sind Hop Count (Anzahl der Router auf dem Pfad), Bandbreite, Verzögerung, Last oder eine Kombination davon. Protokolle wie OSPF und RIP (obwohl RIP nur Hop Count verwendet) basieren auf diesem Prinzip. Der Router wählt den Pfad mit dem niedrigsten kumulativen Metrikwert.
+
+2.  **Hierarchisches Routing:**
+    *   **Beschreibung:** Um die Skalierbarkeit in sehr großen Netzwerken (wie dem Internet) zu verbessern, wird hierarchisches Routing eingesetzt. Das Netzwerk wird in Domänen oder Bereiche (in OSPF) bzw. Autonome Systeme (AS in BGP) unterteilt. Router innerhalb einer Hierarchieebene (z. B. innerhalb eines AS) kennen die detaillierte Topologie ihres eigenen Bereichs, haben aber nur zusammengefasste Informationen über andere Bereiche. Dies reduziert die Größe der Routing-Tabellen und den Umfang des Routing-Protokollverkehrs erheblich. BGP ist das primäre Beispiel für hierarchisches Routing zwischen Autonomen Systemen.
+
+3.  **Policy-Based Routing (PBR - Richtlinienbasiertes Routing):**
+    *   **Beschreibung:** Anstatt Routing-Entscheidungen ausschließlich auf der Basis der Ziel-IP-Adresse zu treffen (wie es beim Standard-Routing der Fall ist), ermöglicht PBR Administratoren, Routing-Entscheidungen auf der Grundlage von Richtlinien oder Regeln zu treffen. Diese Regeln können andere Kriterien im Paket-Header berücksichtigen, wie z. B. die Quell-IP-Adresse, die Portnummer, das Protokoll (TCP/UDP) oder die Paketgröße. PBR kann verwendet werden, um bestimmten Datenverkehr über spezifische Pfade zu leiten (z. B. Web-Traffic über eine schnelle Leitung, Backup-Traffic über eine günstigere Leitung) oder um Sicherheitsrichtlinien durchzusetzen.
+
+## Erklären Sie was unter "Routing-Protokoll" zu verstehen ist.
+
+Ein **Routing-Protokoll** ist ein Satz von Regeln und Verfahren, den Router verwenden, um miteinander zu kommunizieren und Routing-Informationen auszutauschen. Diese Protokolle ermöglichen es Routern, dynamisch Informationen über die Netzwerktopologie zu lernen, Routing-Tabellen aufzubauen und zu pflegen und die besten Pfade für die Datenübertragung zu bestimmen.
+
+Hauptfunktionen von Routing-Protokollen sind:
+
+1.  **Netzwerkerkennung:** Entdecken benachbarter Router und verfügbarer Netzwerke.
+2.  **Routenverwaltung:** Austausch von Informationen über erreichbare Netzwerke und die zugehörigen Metriken (Kosten).
+3.  **Pfadauswahl:** Berechnung des besten Pfades zu jedem bekannten Zielnetzwerk basierend auf den gesammelten Informationen und dem Algorithmus des Protokolls.
+4.  **Konvergenz:** Sicherstellen, dass alle Router im Netzwerk eine konsistente und aktuelle Sicht auf die Topologie haben, insbesondere nach Änderungen.
+
+Routing-Protokolle sind die Grundlage für dynamisches Routing und ermöglichen es Netzwerken, automatisch auf Änderungen zu reagieren und den Datenverkehr effizient zu lenken.
+
+## Nennen Sie vier verschiedene Protokolltypen.
+
+Hier sind vier wichtige Typen bzw. Beispiele für Routing-Protokolle, die unterschiedliche Kategorien abdecken:
+
+1.  **RIP (Routing Information Protocol):**
+    *   **Typ:** Interior Gateway Protocol (IGP), Distance-Vector-Protokoll.
+    *   **Beschreibung:** Eines der ältesten Routing-Protokolle. Es verwendet die Anzahl der Hops (Router) als Metrik zur Pfadauswahl. RIP ist einfach, hat aber Einschränkungen hinsichtlich der Netzwerkgröße (max. 15 Hops) und der Konvergenzgeschwindigkeit. Es gibt Versionen wie RIPv1, RIPv2 (Classless) und RIPng (für IPv6).
+
+2.  **OSPF (Open Shortest Path First):**
+    *   **Typ:** Interior Gateway Protocol (IGP), Link-State-Protokoll.
+    *   **Beschreibung:** Ein weit verbreitetes, standardbasiertes Protokoll. Router mit OSPF bauen eine vollständige Karte (Topologie-Datenbank) ihres Bereichs auf und berechnen mithilfe des Dijkstra-Algorithmus den kürzesten Pfad. OSPF verwendet "Kosten" als Metrik, die oft von der Bandbreite abgeleitet wird. Es ist skalierbar und unterstützt hierarchisches Design durch Bereiche (Areas).
+
+3.  **EIGRP (Enhanced Interior Gateway Routing Protocol):**
+    *   **Typ:** Interior Gateway Protocol (IGP), Fortgeschrittenes Distance-Vector-Protokoll (manchmal als Hybrid bezeichnet).
+    *   **Beschreibung:** Ursprünglich ein proprietäres Cisco-Protokoll (jetzt ein offener Standard). Es kombiniert Aspekte von Distance-Vector- und Link-State-Protokollen. EIGRP verwendet eine komplexe Metrik (basierend auf Bandbreite, Verzögerung, Last, Zuverlässigkeit) und ist für seine schnelle Konvergenz bekannt (mittels DUAL-Algorithmus).
+
+4.  **BGP (Border Gateway Protocol):**
+    *   **Typ:** Exterior Gateway Protocol (EGP), Path-Vector-Protokoll.
+    *   **Beschreibung:** Das Kern-Routing-Protokoll des Internets. BGP wird verwendet, um Routing-Informationen *zwischen* verschiedenen Autonomen Systemen (AS) auszutauschen (z. B. zwischen verschiedenen Internet Service Providern oder großen Organisationen). Es konzentriert sich weniger auf die Metrik zur Pfadfindung als vielmehr auf die Durchsetzung von Routing-Richtlinien (Policies) basierend auf Pfadattributen. Es ist hochgradig skalierbar und flexibel.
