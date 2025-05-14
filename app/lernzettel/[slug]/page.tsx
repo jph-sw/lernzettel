@@ -14,8 +14,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   let post = getBlogPosts().find((post) => post.slug === slug);
+
   if (!post) {
-    return;
+    return {};
   }
 
   let {
@@ -57,7 +58,7 @@ export default async function Blog({ params }) {
   let post = getBlogPosts().find((post) => post.slug === slug);
 
   if (!post) {
-    NotFound();
+    return NotFound();
   }
 
   return (
