@@ -1,0 +1,75 @@
+---
+title: "Routing Mechanismen"
+publishedAt: 2025-05-15
+summary: "Zusammenfassung für Distance Vector Routing, Link State Routing"
+---
+
+## Zusammenfassung: Distance Vector vs. Link State Routing
+
+Sowohl Distance-Vector- als auch Link-State-Protokolle sind Mechanismen, die Router verwenden, um dynamisch Routing-Informationen auszutauschen und die besten Pfade durch ein Netzwerk zu bestimmen. Sie unterscheiden sich jedoch grundlegend in der Art und Weise, wie sie Informationen sammeln, austauschen und verarbeiten.
+
+### Distance-Vector-Routing-Protokolle ("Routing nach Gerücht")
+
+1.  **Grundprinzip:**
+    *   Router, die Distance-Vector-Protokolle verwenden, kennen die "Distanz" (Metrik, z. B. Hop-Anzahl) und die "Richtung" (den nächsten Hop-Router oder die ausgehende Schnittstelle) zu Zielnetzwerken.
+    *   Sie verlassen sich auf die Informationen, die sie von ihren direkt verbundenen Nachbarroutern erhalten. Jeder Router teilt seine eigene Routing-Tabelle (oder Teile davon) periodisch mit seinen Nachbarn.
+    *   Man kann es sich vorstellen wie "Routing nach Gerücht": Router A sagt Router B: "Ich kann Netzwerk X in 3 Hops erreichen." Router B fügt dann seine eigene Distanz zu Router A hinzu, um seine Gesamtdistanz zu Netzwerk X zu berechnen.
+
+2.  **Informationsaustausch:**
+    *   **Was wird geteilt?** Die gesamte oder ein Teil der Routing-Tabelle.
+    *   **Mit wem wird geteilt?** Nur mit direkt verbundenen Nachbarn.
+    *   **Wann wird geteilt?** In regelmäßigen Abständen (z. B. alle 30 Sekunden bei RIP), unabhängig davon, ob sich die Netzwerktopologie geändert hat.
+
+3.  **Netzwerkansicht:**
+    *   Router haben keine vollständige Karte des Netzwerks. Sie kennen nur die Informationen, die ihre Nachbarn ihnen zur Verfügung stellen.
+
+4.  **Algorithmus:**
+    *   Basiert typischerweise auf dem Bellman-Ford-Algorithmus (oder Variationen davon).
+
+5.  **Vorteile:**
+    *   Einfacher zu implementieren und zu verstehen.
+    *   Geringere Anforderungen an CPU und Speicher des Routers (da keine komplexe Topologie-Datenbank oder SPF-Berechnung erforderlich ist).
+
+6.  **Nachteile:**
+    *   **Langsame Konvergenz:** Es kann lange dauern, bis sich Änderungen in der Netzwerktopologie im gesamten Netzwerk verbreiten.
+    *   **Routing-Schleifen (Routing Loops):** Anfällig für das "Counting-to-Infinity"-Problem, bei dem Pakete in Schleifen zirkulieren können, bis TTL-Werte ablaufen. Mechanismen wie Split Horizon, Poison Reverse und Hold-Down-Timer werden verwendet, um dies zu mildern.
+    *   **Periodische Updates:** Verbrauchen Bandbreite, auch wenn keine Änderungen im Netzwerk vorliegen.
+
+7.  **Beispiele:**
+    *   **RIP** (Routing Information Protocol)
+    *   **IGRP** (Interior Gateway Routing Protocol - veraltet, Cisco-proprietär)
+
+### Link-State-Routing-Protokolle ("Jeder Router hat eine Karte")
+
+1.  **Grundprinzip:**
+    *   Router, die Link-State-Protokolle verwenden, bauen eine vollständige topologische Karte des Netzwerks (oder ihres Bereichs) auf.
+    *   Jeder Router informiert alle anderen Router im Netzwerk (oder Bereich) über den Zustand seiner eigenen direkten Verbindungen (Links) und seiner Nachbarn. Diese Informationen werden als Link State Advertisements (LSAs) oder Link State Packets (LSPs) bezeichnet.
+    *   Sobald ein Router alle LSAs gesammelt hat, erstellt er eine identische Topologie-Datenbank wie alle anderen Router im Bereich.
+
+2.  **Informationsaustausch:**
+    *   **Was wird geteilt?** Informationen über den Zustand der eigenen direkten Verbindungen (LSAs/LSPs).
+    *   **Mit wem wird geteilt?** Mit allen anderen Routern im selben Routing-Bereich (Area) durch einen Prozess namens "Flooding".
+    *   **Wann wird geteilt?** Wenn eine Änderung im Zustand eines Links auftritt (z. B. Link geht hoch/runter, Metrik ändert sich) und periodisch (aber seltener als bei Distance Vector, z. B. alle 30 Minuten zur Aktualisierung).
+
+3.  **Netzwerkansicht:**
+    *   Jeder Router hat eine vollständige und identische Sicht auf die Topologie des Netzwerks (oder seines Bereichs).
+
+4.  **Algorithmus:**
+    *   Verwendet den Dijkstra-Algorithmus (auch bekannt als Shortest Path First - SPF-Algorithmus), um den kürzesten Pfad zu allen Zielen in der Topologie-Datenbank zu berechnen.
+
+5.  **Vorteile:**
+    *   **Schnelle Konvergenz:** Änderungen werden schnell im gesamten Netzwerk verbreitet, da Updates ereignisgesteuert sind.
+    *   **Weniger anfällig für Routing-Schleifen:** Da jeder Router eine vollständige Karte hat, sind Schleifen unwahrscheinlicher.
+    *   **Effizientere Bandbreitennutzung (nach initialem Flood):** Updates werden nur bei Änderungen gesendet.
+    *   **Skalierbarkeit:** Oft besser für größere Netzwerke geeignet, insbesondere durch hierarchisches Design (z. B. Bereiche in OSPF).
+
+6.  **Nachteile:**
+    *   **Höhere Anforderungen an CPU und Speicher:** Das Speichern der Topologie-Datenbank und das Ausführen des SPF-Algorithmus sind rechenintensiver.
+    *   **Komplexere Implementierung und Konfiguration.**
+    *   **Initiales Flooding:** Kann bei großen Netzwerken zu Beginn oder bei Neustarts viel Bandbreite beanspruchen.
+
+7.  **Beispiele:**
+    *   **OSPF** (Open Shortest Path First)
+    *   **IS-IS** (Intermediate System to Intermediate System)
+
+**Kurz gesagt:** Distance-Vector-Router vertrauen darauf, was ihre Nachbarn ihnen sagen, ohne das Gesamtbild zu kennen. Link-State-Router sammeln Informationen von allen, um ihre eigene, vollständige Karte des Netzwerks zu erstellen und dann die besten Pfade zu berechnen.
