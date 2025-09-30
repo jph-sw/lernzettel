@@ -1,0 +1,395 @@
+---
+title: "AP1 Zusammenfassung"
+description: "Das ist eine Zusammenfassung für die AP1 Klausur."
+date: "2025-03-20"
+---
+
+# Allgemeine Zusammenfassung
+
+Hier werde ich zu jedem Thema etwas kurzes schreiben.
+Diese Themen sind aus dem Prüfungskatalog für die AP1 Klausur. Und stark an der von Stefan Macke orientiert.
+
+**Inhaltsverzeichnis**
+
+[TOC]
+
+## toc
+
+## Merkmale eines Projektes
+
+**Einmaligkeit**
+Projekte sind meist einmalig und haben ein spezifisches Ziel.
+
+**Definierter Anfang und Ende**
+Projekte haben einen klaren Startpunkt und einen definierten Endpunkt.
+
+**Spezifische Ziele**
+Projekte haben spezifische Ziele, die erreicht werden sollen.
+
+Es gibt noch weitere Merkmale, aber das sind die wichtigsten. _(ich denke mal drei reichen)_
+
+## SMART-Prinzip
+
+Das SMART-Prinzip ist ein Akronym für die Kriterien, die ein Ziel erfüllen sollte, um erfolgreich zu sein. Es steht für:
+
+- **S** - Spezifisch / Specific
+- **M** - Messbar / Measurable
+- **A** - Erreichbar / Achievable
+- **R** - Angemessen / Reasonable
+- **T** - Terminiert / Time-bound
+
+Es hilft dabei, Ziele so zu formulieren, dass sie klar und verständlich sind.
+
+## Projektphasen am Beispiel des Wasserfallmodells bzw. SCRUM definieren können
+
+Scrum und das Wasserfallmodell unterscheiden sich stark und haben unterschiedliche Phasen. _(ich mag scrum lieber also machen wir das)_
+
+- Sprintplanung
+- Tägliches Scrum
+- Sprint Review
+- Sprint Retrospektive
+
+eigentlich ziemlich selbsterklärend
+
+## Phasen der Teambildung und -entwicklung kennen
+
+Die Phasen beschreiben den Prozess, den ein Team durchläuft, um von einer Ansammlung von Individuen zu einer hochleistungsfähigen Einheit zu werden -> saufen.
+
+**Phasen:**
+
+- **Orientierungsphase**
+- **Konfliktphase**
+- **Organisationsphase**
+- **Leistungsphase**
+- **Abschlussphase**
+
+wenn man die beschreiben soll kann man sich da auch was ausm arsch ziehen
+
+## Machbarkeit und Wirtschaftlichkeit von Projekten beurteilen können
+
+// todo
+
+## Vor- und Nachkalkulation
+
+Sie sind zwei wichtige Instrumente der Kostenrechnung, die dazu diesen, die Wirtschaftlichkeit von Produkten, Dienstleistungen, Aufträgen oder Projekten zu planen, zu überwachen und zu analysieren.
+
+**Ziele der Vorkalkulation**
+
+- Ermittlung des Selbstkostenpreises.
+- Festlegung des Verkaufspreises.
+- Erstellung von Angeboten.
+- Planung der Ressourcen.
+- Budgetierung.
+- Entscheidungsgrundlage für die Annahme oder Ablehnung von Aufträgen.
+
+**Ziele der Nachkalkulation**
+
+- Kontrolle der Wirtschaftlichkeit.
+- Ermittlung von Kostenabweichungen.
+- Identifizierung von Verbesserungspotenzialen.
+- Verbesserung der Vorkalkulation.
+- Entscheidungsgrundlage für zukünftige Aufträge.
+
+## Betriebswirtschaftliche Kennzahlen, z. B. Umsatz, Gewinn, Deckungsbeitrag
+
+Der **Umsatz** ist die Gesamtsumme der Einnahmen, die ein Unternehmen aus dem Verkauf von Waren oder Dienstleistungen innerhalb eines bestimmten Zeitraums erzielt.
+
+Der **Gewinn** ist der Betrag, der nach Abzug aller Kosten (einschließlich Umsatzkosten, betrieblicher Kosten, Zinsen und Steuern) vom Umsatz übrig bleibt.
+
+Der **Deckungsbeitrag** ist der Betrag, der nach Abzug der variablen Kosten vom Umsatz übrig bleibt. Er gibt an, wie viel Geld zur Deckung der Fixkosten und zur Erzielung eines Gewinns zur Verfügung steht.
+
+## KI-Unterstützung
+
+Der Begriff **KI-Unterstützung** sagt erst mal nicht viel aus, aber was ich mir darunter vorstelle, ist wie KI einem im Alltag helfen kann oder so was.
+
+## Support- und Serviceanfragen (First-, Second- und Thirdlevelsupport)
+
+**First Level Support**
+
+Der First-Level-Support ist die erste Anlaufstelle für Kunden, die Hilfe benötigen. Er nimmt Anfragen entgegen, identifiziert das Problem und versucht, es mit Hilfe von Standardlösungen, FAQs, Wissensdatenbanken und einfachen Anleitungen zu lösen.
+
+**Second Level Support**
+
+Der Second-Level-Support übernimmt komplexere Anfragen, die der First-Level-Support nicht lösen konnte. Die Mitarbeiter verfügen über tiefere technische Kenntnisse und können komplexere Probleme diagnostizieren und beheben.
+
+**Third Level Support**
+
+Der Third-Level-Support ist die höchste Support ebene und besteht aus Experten, die über umfassende Kenntnisse der Produkte oder Dienstleistungen des Unternehmens verfügen. Sie übernehmen die komplexesten und schwierigsten Probleme, die der Second-Level-Support nicht lösen konnte. Oft sind dies die Entwickler, Architekten oder Produktspezialisten.
+
+## Quantitative und qualitative Angebotsbewertung
+
+**1. Quantitative Angebotsbewertung:**
+
+Die quantitative Angebotsbewertung konzentriert sich auf messbare und zahlenmäßige Aspekte des Angebots. Sie basiert auf objektiven Kriterien, die in der Regel in Form von Punktzahlen oder Gewichtungen bewertet werden. Der Fokus liegt auf den finanziellen Aspekten des Angebots.
+
+**2. Qualitative Angebotsbewertung:**
+
+Die qualitative Angebotsbewertung konzentriert sich auf nicht-messbare und subjektive Aspekte des Angebots. Sie bewertet die Qualität der Produkte oder Dienstleistungen, die Kompetenz des Anbieters und die Einhaltung der Anforderungen des Auftraggebers.
+
+## Situationsgerechte Kundenkommunikation
+
+Situationsgerechte Kundenkommunikation bedeutet, dass die Art und Weise, wie du mit einem Kunden kommunizierst, an die jeweilige Situation, den Kunden selbst und den Kontext angepasst wird. Es geht darum, die richtige Botschaft, den passenden Ton und die angemessenen Kommunikationskanäle zu wählen, um eine positive und effektive Interaktion zu gewährleisten. Im Kern geht es darum, empathisch zu sein und die Perspektive des Kunden zu verstehen.
+
+**Verständnis des Kunden:**
+
+- **Persönlichkeit:** Ist der Kunde formell oder informell, direkt oder indirekt?
+- **Kenntnisse:** Hat der Kunde ein tiefes Verständnis des Produkts/der Dienstleistung oder ist er ein Neuling?
+- **Bedürfnisse:** Was sind die spezifischen Bedürfnisse und Erwartungen des Kunden in dieser Situation?
+- **Hintergrund:** Was ist die Vorgeschichte des Kunden mit dem Unternehmen? Gab es bereits Probleme?
+- **Emotionaler Zustand:** Ist der Kunde zufrieden, frustriert, verärgert oder neutral?
+
+## Kundenbedarf ermitteln und Angebote unterbreiten
+
+Dazu gehören Sachen wie:
+
+- **Bedarfsanalyse**
+- **Angebotsgestaltung**
+- **Angebotsvorstellung**
+
+## Interpretation englischsprachiger Texte
+
+-> selbsterklärend
+
+## Technische und kaufmännische Texte in deutscher und englischer Sprache
+
+-> jeder kann englisch man
+
+## Präsentation und Medienkompetenz
+
+-> aufbau einer präsi?? oder fake news erkennen? hä
+
+## Funktionale, ökonomische und ökologische Aspekte
+
+z. B. Ergonomie, Leistungsparameter, einmalige und laufende Kosten, Nutzungsdauer, Energieverbrauch, Recyclingfähigkeit
+
+## Hardwareprodukte
+
+z. B. CPU, Motherboard, Speicher, Datenspeicher, Netzteile, Grafikkarte, Peripheriegeräte, Sensoren, Netzwerkkomponenten wie z. B. WLAN-Router, Switch, Gateway, Accesspoint
+
+_(kann jeder)_
+
+## Standardsoftware
+
+z. B. Office-Pakete, Datenbank-Managementsysteme, Browser
+
+_(kann man sich was ausm arsch ziehen)_
+
+## Branchensoftware
+
+z. B. ERP-Systeme, Supply Chain Management, Customer Relationship
+
+Ich schätze mal dazu gehören Sachen, wie Github, Jira oder CI/CD? Und FAQs oder sowas
+
+## Systemsoftware
+
+keine ahnung was das genau heißen soll 🙂
+
+## Entwicklungssysteme
+
+z. B. Compiler, virtuelle Maschinen, Interpreter, Editoren und Debugger
+
+- Compiler -> Kompiliert Code in Maschinensprache, die die CPU verstehen kann.
+
+- Interpreter -> (meist high-level-langauges) übersetzt quasi den code live
+
+- Debugger -> hilft einfach beim debuggen von software, man kann sie stoppen, breakpoints setzen usw.
+
+- virtuelle maschinen -> kennt jeder
+
+## KI-Software
+
+kann sehr vieles sein. Vielleicht, wie KI in Software integriert werden kann? Um Workflows zu verbessern oder so was?
+
+## Cloudlösungen, z. B. Software as a Service, Desktop as a Service
+
+- **SaaS** -> Software as a Service
+
+  Man verkauft eine Software (mit service) z.B. als Abo, die einen Zweck erfüllt
+
+da gibts noch paar mehr von, wer sich das geneuer angucken möchte kann das machen.
+
+## Virtuelle Desktops (Cloud oder lokal)
+
+haben wir [hier](#entwicklungssysteme) schon besprochen. Dazu kommt noch der Unterschied zwischen Cloud und Lokal.
+
+## Einteilung und Klassifikation von Anwendungssystemen
+
+Die Einteilung und Klassifikation von Anwendungssystemen ist ein Prozess, bei dem Softwareanwendungen anhand verschiedener Kriterien in Gruppen oder Kategorien eingeordnet werden. Dies dient dazu, ein besseres Verständnis der Eigenschaften, Einsatzgebiete und Architekturen von Anwendungssystemen zu erlangen. Eine strukturierte Einteilung hilft bei der Auswahl geeigneter Systeme für bestimmte Aufgaben, bei der Entwicklung neuer Anwendungen und bei der Verwaltung und Wartung bestehender Systeme.
+
+## Datenbanksysteme
+
+mysql, postgresql, mariadb, sqlite, oracle (glaube das ist damit gemeint)
+
+_microsoft-sql_ nicht vergessen 😉
+
+## Kommunikationssysteme
+
+z. B. Videokonferenzsysteme, Social-Media-Systeme
+
+## Netzwerkkomponenten
+
+z. B. Router, Switch, Accesspoint
+
+## Netzwerkprotokolle und OSI-Modell \*
+
+z. B. Ethernet, IP, DNS
+
+## Client-Server-Systeme
+
+**Grundprinzip:**
+
+Das Client-Server-Modell basiert auf der Idee, dass ein _Server_ Ressourcen oder Dienste bereitstellt und _Clients_ diese Ressourcen oder Dienste anfordern und nutzen. Diese Aufteilung ermöglicht es, Aufgaben effizienter zu erledigen, Ressourcen zentral zu verwalten und die Skalierbarkeit zu verbessern.
+
+## Einbindung in einer Domäne
+
+Die "Einbindung in einer Domäne" bezieht sich auf den Prozess, einen Computer in ein Netzwerk einzubinden, das von einer Domäne verwaltet wird. Eine Domäne ist eine zentralisierte Verwaltungsstruktur, die in Netzwerken, insbesondere in Windows-basierten Umgebungen, verwendet wird, um die Benutzerauthentifizierung, den Zugriff auf Ressourcen und die Sicherheitsrichtlinien zu steuern.
+
+## Mobile Geräte, z. B. Smartphone, Tablet
+
+freestyle
+
+## Kenngrößen, Leistungsdaten, Funktionsumfang
+
+z. B. Einstellungsmöglichkeiten im BIOS, UEFI, CPU, RAM, Datenspeicher (SSD/HDD), Filesysteme (z. B. FAT32, NTFS, APFS, ext4), Grafikkarte, Netzwerkkarte, Gateway/Router, Switch, LWL, Ethernet Standards, WLAN-Standards
+
+## Barrierefreier Zugriff auf IT-Systeme am Arbeitsplatz
+
+z. B. Einstellungsmöglichkeiten auf Webseiten
+
+Kontrastwerte, ScreenReader support, internationalisierung (i18n) usw.
+
+## Übertragungsraten, -Zeiten, Datenmengen von digitalisierten Dokumenten, Videos usw.
+
+## Wertschöpfung
+
+Wertschöpfung in der IT bezieht sich auf den Prozess, durch den IT-Systeme, -Dienstleistungen oder -Lösungen einen Mehrwert für ein Unternehmen oder eine Organisation generieren. Dieser Mehrwert kann sich in verschiedenen Formen äußern, von der Steigerung der Effizienz über die Verbesserung der Entscheidungsfindung bis hin zur Schaffung neuer Geschäftsmodelle. Im Kern geht es darum, wie IT dazu beiträgt, die Unternehmensziele zu erreichen und den Geschäftserfolg zu steigern.
+
+## Lasten- und Pflichtenheft (Zweck, Urheber, Inhalt)
+
+## Installation und Einrichtung von Systemen
+
+z. B. Betriebssysteme, BIOS, UEFI, Partitionierungen/Formatierungen, Netzwerkanbindungen, IP(v4/v6)-Konfiguration, Remote-Desktop, KI-Software
+
+## Geräteklassen
+
+### z. B. Desktops, Notebooks, All-in-One, Thin Clients, Tablets, Smartphones
+
+## Mobile und stationäre Arbeitsplatzsysteme wie PC, Terminals, LAN, WLAN
+
+## Barrierefreiheit, Unterstützung durch zusätzliche Hardware
+
+### z. B. größerer Monitor, breitere Tastatur, Lautsprecher/Mikrofon zur Verfügung stellen
+
+## Betriebssysteme
+
+### (Einsatzzweck, Filemanagement, Freigaben managen)
+
+## Branchensoftware
+
+## Grundlagen des Schutzes der Urheber
+
+## Konsolenbefehle für Dateioperationen und Netzwerktroubleshooting
+
+### z. B. dir, Is, mkdir, ipconfig, ifconfig/ip, alias, iproute2, arp, del, cp, copy, chmod, ping, traceroute, nslookup
+
+## Klassen, Attribute, Objekte, Methoden, Sichtbarkeit
+
+## Skriptsprachen, z. B. Shell-Skript
+
+## Abbildung der Kontrollstrukturen
+
+### z. B. Verzweigungen, Schleife, mittels Pseudocode
+
+## UML
+
+### (Use Case bzw. Anwendungsfalldiagramm, Klassendiagramm, Aktivitätsdiagramm)
+
+## Entwurf der Bildschirmausgabemasken
+
+### (Softwareergonomie, Corporate Identity, Barrierefreiheit)
+
+## Fehler in einem gegebenen Quellcode finden
+
+## Schreibtischtest mit einem gegebenen Quellcode durchführen
+
+## Grundlagen von relationalen Datenbanken kennen und anwenden können
+
+## Testprotokoll für das Einrichten eines Arbeitsplatzes
+
+## Gewährleistung von Verfügbarkeit, Vertraulichkeit und Integrität der Daten
+
+## Technisch organisatorische Maßnahmen (TOM); Unterscheidung von IT-Sicherheitsbeauftragtem und Datenschutzbeauftragtem im Betrieb; Erläuterung von IT-Sicherheitsrichtlinien wie Passwort-Policy
+
+## Benennung von technischen Maßnahmen
+
+### z. B. Virenschutz, Personal Firewall, Verschlüsselung (inkl. Unterscheidung symmetrisch, asymmetrisch und hybrid)
+
+## personelle Maßnahmen, Entwicklung des Sicherheitsbewusstseins
+
+## Auszüge aus BSI IT-Grundschutz-Kompendium
+
+## Einhaltung der Grundzüge der Datenschutzgesetze, national und auf EU-Ebene, z. B. DSGVO, BDSG überprüfen
+
+## Rechte der Betroffenen, Konsequenzen der Einwilligung der Betroffenen kennen
+
+## Maßnahmen wie Anonymisierung und Pseudonymisierung
+
+## Schutzbedarfsanalyse im eigenen Arbeitsbereich aufgrund betrieblicher Vorgaben nach BSI IT-Grundschutz durchführen
+
+## Räume, Infrastruktur
+
+## Schutzbedarfskategorien (normal, hoch, sehr hoch) ableiten und begründen
+
+## Informations-Sicherheitsmanagementsystem (ISMS) kennen und unterstützen
+
+## Betrieblicher IT-Sicherheitsbeauftragter
+
+## Risiko-Klassifikation, z. B. mit Matrix
+
+## Sicherung der Verfügbarkeit, z. B. NAS
+
+## Verschlüsselungstechniken kennen
+
+### (symmetrische, asymmetrische und hybride Verschlüsselung); Hashwerte, Zertifikate und digitale Signaturen verwenden
+
+## Authentifizierung (z. B. Zweifaktor) kennen, Passwort-Policy bewerten
+
+## Personal Firewall anpassen
+
+### z. B. Softwarezugriff auf Internet sperren
+
+## Härtung Betriebssystem (Schwachstellen schließen)
+
+## Vertragsbestandteile
+
+### z. B. Leistungsbeschreibung, Termine, Entgelte, Sanktionen/Konventionalstrafen
+
+## Vertragsstörungen
+
+## Ökologisch
+
+### z. B. Ressourcenschonung, Nachhaltigkeit
+
+## Ökonomisch
+
+### z. B. Umsatz und Gewinn
+
+## Sozial, z. B. Arbeitsbedingungen
+
+## Kauf, Miete, Leasing
+
+## Ticketsystem
+
+## Einhaltung des Budgets
+
+## Inhalt des Abnahmeprotokolls
+
+## Schlechtleistung
+
+## Falschlieferung
+
+## Minderlieferung
+
+## Nachkalkulation
+
+## Generierung von Nachfolgeaufträgen
