@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://miniblog.nicholasly.com/sitemap-index.xml

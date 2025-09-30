@@ -1,29 +1,84 @@
-# Meine Website zum Teilen von Lernzetteln
+# Miniblog
 
-## How to Use
+**Miniblog** is an opinionated and extremely minimal blogging template built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/), whose design is heavily inspired by [jrmyphlmn.com](https://jrmyphlmn.com/). Incredibly easy to use and customize, you can use **Miniblog** as is, or add as much as you want to it.
 
-Ihr möchtet selber Lernzettel schreiben und hinzufügen? Ganz einfach!
+- Blog post authoring using [Markdown](https://www.markdownguide.org/) and [MDX](https://mdxjs.com/) for component-style content
+- Code block syntax highlighting with [Shiki](https://github.com/shikijs/shiki) 
+- [RSS](https://en.wikipedia.org/wiki/RSS) feed and sitemap generation
+- SEO optimization, with customizable OpenGraph image support
+- Code formatting with [Prettier](https://prettier.io/)
+- Accessible view transitions
+- Dark mode
 
-Die Lernzettel sind unter: app/lernzettel/posts/
+## Getting Started
 
-Sie sind mithilfe von Markdown geschrieben. Genauso wie diese README!! 
-Markdown ist sehr einfach zu verstehen, lest euch einfach den Quellcode von anderen Lernzetteln durch.
+1. Click "Use this template", the big green button on the top right, to create a new repository with this template.
 
-### Wie erstelle ich jetzt selber Lernzettel?
+2. Clone the repository:
 
-1. Erstellt ein Fork von der Repo
-2. Fügt einen Post unter /app/lernzettel/posts hinzu
-3. Commited und erstellt eine Pull request
-
-**CAUTION**
-
-Am Anfang der Datei **muss** das folgende stehen:
-```
----
-title: "Python Grundlagen: Einfacher geht's nicht!"
-publishedAt: "2024-04-26"
-summary: "Verstehe Python ganz leicht in nur 5-10 Minuten!"
----
+```bash
+git clone https://github.com/[YOUR_USERNAME]/[YOUR_REPO_NAME].git
+cd [YOUR_REPO_NAME]
 ```
 
-Ersetzt das mit euren Daten, aber achtet darauf das Datum richtig zu formatieren `yyyy-mm-dd`. Außerdem müssen die `---` **beide** da sein!
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+5. Optionally, format your code after making changes:
+
+```bash
+npm run format
+```
+
+## Customization
+
+**Miniblog** purposely keeps itself minimal, relying on no other web framework than Astro, and keeping styling simple through Tailwind and traditional CSS.
+
+### Site Configuration
+
+Edit the `src/consts.ts` file to update your information and site's metadata:
+
+```ts
+export const SITE_URL = "https://miniblog.nicholasly.com";
+export const SITE_TITLE = "Miniblog";
+export const SITE_DESCRIPTION = "Welcome to my website!";
+
+export const EMAIL = "hello@nicholasly.com";
+```
+
+### Blog Posts
+
+Add new blog posts as Markdown or MDX files in the `src/content/posts/` directory. Use the following frontmatter structure:
+
+```yml
+---
+title: "Lorem Ipsum"
+description: "Lorem ipsum dolor sit amet."
+date: "Nov 06 2024"
+---
+```
+
+### Markdown Styling
+
+All Markdown-specific CSS styling is customizable in `src/styles/global.css`:
+
+```css
+@layer components {
+  article {
+    /* ... */
+  }
+}
+```
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
