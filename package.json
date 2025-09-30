@@ -3,9 +3,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
+    "@opennextjs/cloudflare": "^1.9.0",
     "@tailwindcss/postcss": "4.0.0-alpha.13",
     "@types/node": "20.11.17",
     "@types/react": "^19.0.0",
@@ -14,6 +19,7 @@
     "@vercel/speed-insights": "^1.2.0",
     "geist": "^1.4.2",
     "google-fonts": "^1.0.0",
+    "install": "^0.13.0",
     "next": "^15.2.3",
     "next-mdx-remote": "^5.0.0",
     "postcss": "^8.4.35",
@@ -21,6 +27,7 @@
     "react-dom": "^19.0.0",
     "sugar-high": "^0.6.0",
     "tailwindcss": "4.0.0-alpha.13",
-    "typescript": "5.3.3"
+    "typescript": "5.3.3",
+    "wrangler": "^4.40.3"
   }
 }
