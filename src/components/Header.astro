@@ -1,5 +1,4 @@
 ---
-import { EMAIL } from "../consts";
 import ThemeToggle from "./ThemeToggle.astro";
 ---
 
@@ -7,7 +6,6 @@ import ThemeToggle from "./ThemeToggle.astro";
   <nav class="flex items-center gap-4">
     <a href="/"> home </a>
     <a href="/posts"> posts </a>
-    <a href={`mailto:${EMAIL}`}>email</a>
   </nav>
   <ThemeToggle />
 </header>
