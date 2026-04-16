@@ -66,7 +66,13 @@ In der **CIDR-Notation** schreibt man `/24`, weil 24 Bits auf „1" gesetzt sind
 
 **Schritt 1: Wie viele Bits müssen geborgt werden?**
 
-2ⁿ ≥ 4 → **n = 2 Bits** (2² = 4)
+2ⁿ = 4 → **n = 2 Bits** (2² = 4)
+
+```
+2² = 4 | /² (hier einfach ganz normal auflösen)
+-> 1² = 2
+-> 2
+```
 
 **Schritt 2: Neue Präfixlänge berechnen**
 
