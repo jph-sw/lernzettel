@@ -1,5 +1,5 @@
 ---
-title: "Normalformen"
+title: "Normalformen für dumme"
 description: "Normalformen kurz erklärt"
 date: 2026-04-28
 ---
